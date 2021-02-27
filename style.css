@@ -61,37 +61,54 @@ margin: 0px;
 .search
 {
     display: flex;
-    border-collapse: collapse;
+    padding: 5px 5px;
 }
 .icon-left
 {
- border-top: 2px solid blue;
- border-bottom: 2px solid blue;
- border-left: 2px solid blue;
- border-top-left-radius: 5px;
- border-bottom-left-radius: 5px;
- border-right-color: white;
- padding: 5px 5px;
- background-color: lightgrey;
+ border-top: 2px solid #F2F2F2;
+ border-bottom: 2px solid #F2F2F2;
+ border-left: 2px solid #F2F2F2;
+ border-top-left-radius: 15px;
+ border-bottom-left-radius: 15px;
+ border-right-color: #F2F2F2;
+ padding: 6px 15px;
+ background-color: #F2F2F2;
 }
 .searchbar
 {
-    border-top: blue solid 2px;
-    border-bottom:blue solid 2px;
-    border-right-color: white;
-    border-left-color: white;
-    list-style-type: none;
-    
-    padding: 5px 5px;
+    border: #F2F2F2  solid 2px;
+     padding: 3px 3px;
+     color: black;
+}
+::placeholder
+{
+    color: black;
+    font-weight: bold;
+
 }
 .icon-right
 {
-    padding: 5px 5px;
+    padding: 7px 12px;
     color: white;
     list-style: none;
-    border: blue solid 2px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background-color: blue;
-   
+    border: #0065FC solid 2px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color:#0065FC;
+    text-decoration: none;
+}
+.icon-right a
+{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+h3
+{
+    margin: 0px;
+    margin-top: 15px;
+}
+p
+{
+    margin-top: 10px;
 }
