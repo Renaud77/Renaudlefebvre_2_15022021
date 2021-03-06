@@ -149,8 +149,8 @@
 /*Section hebergement et hebergement populaire*/
 .hebergement{
     display: flex;
-    height: fit-content;
-    width: fit-content;
+    height: 60%;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -210,24 +210,34 @@
 .accomodation-hebergement-stars{
     line-height: 0;
 }
+.afficher-plus{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
 /*CSS du block populaire desktop*/
 .block-card-populaire{
     background-color: #F2F2F2;
     border-radius: 25px;
     width: 30%;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     padding: 15px;
 }
 .titre-populaire{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     align-items: center;
 }
 .conteneur-card-populaire{
     display: flex;
-    align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
+    
+    justify-content: space-between;
+    align-items: center;
+    height: 90%;
+    
 }
 .img-populaire{
     height: 110px;
@@ -250,3 +260,81 @@
 .accomodation-populaire-texte{
     line-height: 0;
 }
+
+/* decoupage de la taille des imgs*/
+
+.card-1 img{
+    height: 400px;
+    width: 50%;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.card-1{
+    border-radius: 25px;
+    width: 75%;
+}
+.card-2 img{
+    height: 200px;
+    width: 50%;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.card-3 img{
+    height: 150px;
+    width: 50%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.card-4 img{
+    height: 400px;
+    width: 75%;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.card-5 img{
+    height: 150px;
+    width: 50%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.card-6 img{
+    height: 150px;
+    width: 50%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.grand-element-1{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    width: 45%;
+}
+.grand-element-2{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    width: 45%;
+}
+.conteneur-card-activite{
+    display: flex;
+    justify-content: space-around;
+}
+.conteneur-footer{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-title{
+    font-weight: 700;
+}
+.footer-text{
+    line-height: 5px;
+
+}
+.conteneur-footer{
+    background-color: #F2F2F2;
+}
+
+
