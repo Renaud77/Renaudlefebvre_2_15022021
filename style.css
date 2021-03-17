@@ -332,6 +332,10 @@ main{
     align-items: flex-end;
     justify-content: space-between;
 }
+.conteneur-activite a{
+    text-decoration: none;
+    color: black;
+}
 
 .child{
     line-height: 0;
