@@ -121,7 +121,16 @@ main{
     border:#F2F2F2 2px solid;
     border-radius: 25px;
     width: auto;
-    padding: 0px 10px 0 0;
+    
+}
+.block-filtre a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.block-filtre a:hover{
+    background-color: #F2F2F2;
+    border-radius: 25px;
 }
 .conteneur-icon-filtre{
     color:#0065FC;
@@ -134,11 +143,10 @@ main{
     align-items: center;
     border: #DEEBFF 2px solid;
 }
-
-
-
+.conteneur-text-filtre{
+    width: 140px;
+}
 /*Section icone info*/
-
 .block-info{
     display: flex;
     align-items: center;
@@ -184,7 +192,14 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    
+}
+.card-hebergement a{
+    text-decoration: none;
+    color: black;
+    border-radius: 15px;
+}
+.conteneur-card-hebergement a:hover{
+    box-shadow: 0 3px 10px 1px #7e7e7e;
 }
 .card-hebergement{
     height: 170px;
@@ -253,6 +268,14 @@ main{
         justify-content: space-around;
         height: 474px;
 }
+.conteneur-card-populaire a{
+    text-decoration: none;
+    color: black;
+}
+.conteneur-card-populaire a:hover{
+    box-shadow: 0 3px 10px 1px #7e7e7e;
+    border-radius: 15px;
+}
 .block-card-populaire{
     width: 31%;
     background-color: #F2F2F2;
@@ -263,9 +286,9 @@ main{
    align-items: center;
    background-color: white;
    height: 120px;
-   width: 75%;
    border-radius: 15px;
    padding: 4px;
+   min-width: 250px;
 }
 .img-populaire{
     height: 120px;
@@ -357,9 +380,20 @@ main{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
+.card-activite{
+    box-shadow: 0 3px 10px 1px #7e7e7e;
+    border-radius: 15px;
+}
+.card-activite-large{
+    height: 432px;
+    box-shadow: 0 3px 10px 1px #7e7e7e;
+    border-radius: 15px;
+}
+
+
 /*partit footer*/
 footer{
-    width: 100%;
+    width: 1450px;
 }
 .conteneur-footer{
     display: flex;
