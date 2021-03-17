@@ -131,6 +131,7 @@ main{
 .block-filtre a:hover{
     background-color: #F2F2F2;
     border-radius: 25px;
+    color: black;
 }
 .conteneur-icon-filtre{
     color:#0065FC;
@@ -144,7 +145,8 @@ main{
     border: #DEEBFF 2px solid;
 }
 .conteneur-text-filtre{
-    width: 140px;
+    padding: 0 9px;
+    color: black;
 }
 /*Section icone info*/
 .block-info{
@@ -198,11 +200,11 @@ main{
     color: black;
     border-radius: 15px;
 }
-.conteneur-card-hebergement a:hover{
+.card-hebergement:hover{
     box-shadow: 0 3px 10px 1px #7e7e7e;
 }
 .card-hebergement{
-    height: 170px;
+    height: 175px;
     background-color: white;
     border-radius: 15px;
     padding: 4px;
@@ -422,3 +424,4 @@ footer{
 .right{
     padding: 15px 0;
 }
+
