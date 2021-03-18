@@ -2,50 +2,44 @@
 
 .container{
     font-family: 'Raleway', sans-serif;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1250px;
+}
+main{
+    max-width: 1400px;
+    padding: 0 50px;
+}
+header{
+    max-width: 1400px;
+    padding: 0 50px;
 }
 /*partit header de mon projet */
 
 .header-reservia {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-}
-.header-nav ul{
+    align-items: center;
     display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0; 
-    line-height: 15px;
+    justify-content: space-between;
+    padding-top: 20px;
 }
-.header-nav li{
-    display: flex;
-    padding: 0 30px;
-   
-}
-.header-nav a{
-   color:black;
-   font-size: 1em;
-   text-decoration: none;
-   padding-top: 15px;
-   border-top: transparent 2px solid;
-   line-height: 50px;
-}
-.header-nav a:hover{
-    color:#0065FC;
-    font-size: 1em;
+.link, .register{
     text-decoration: none;
-    padding-top: 15px;
-    border-top: #0065FC 2px solid;
+    border-top: solid 3px transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 2.6rem;
 }
-.inscription a{
+.register{
+    color: #0065fc;
     font-weight: bold;
-    color: #0065FC;
+}
+.link{
+    color: black;
+}
+.link:hover{
+    border-top: solid 3px #0065fc;
+    padding-top: 2.6rem;
+    color: #0065fc;
+}
+.logo-desktop{
+    padding-top: 15px;
 }
 
 main{
@@ -192,7 +186,7 @@ main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 .card-hebergement a{
@@ -232,7 +226,7 @@ main{
 
 .img-hebergement{
     height: 100px;
-    width: 220px;
+    width: 230px;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -331,7 +325,6 @@ main{
 .conteneur-activite{
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
     justify-content: space-between;
 }
 .conteneur-activite a{
@@ -360,21 +353,21 @@ main{
 }
 .img-large{
     height: 400px;
-    width: 290px;
+    width: 300px;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 .img-medium{
     height: 200px;
-    width: 290px;
+    width: 300px;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 .img-small{
     height: 120px;
-    width: 290px;
+    width: 300px;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -398,30 +391,86 @@ main{
 
 
 /*partit footer*/
-footer{
-    width: 1450px;
-}
-.conteneur-footer{
+.container-footer{
     display: flex;
-    justify-content: space-around;
-}
-.footer-title{
-    font-weight: 700;
-}
-.footer-text{
-    line-height: 5px;
-
-}
-.conteneur-footer{
+    justify-content: left;
     background-color: #F2F2F2;
 }
-.left{
-    padding: 15px 0;
+.footer-left, .footer-middle, .footer-right{
+    display: flex;
+    flex-direction: column;
 }
-.middle{
-    padding: 15px 0;
+.footer-left{
+    margin-left: 60px;
 }
-.right{
-    padding: 15px 0;
+.footer-middle, .footer-right{
+    margin-left: 250px;
+}
+.footer-a{
+    padding-top: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
 }
 
+
+
+
+
+
+
+
+/* ajout des media queries*/
+@media screen and (max-width: 650px)
+{
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    .header-reservia{
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+    .register{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 0;
+    }
+    .logo-desktop{
+        width: 100%;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+    .link{
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        border-top:hidden;
+        padding: 15px 0 8px 0;
+        border-bottom: #d8d8d8 3px solid;
+    }
+    .link:hover{
+        border-top: hidden;
+        padding: 15px 0 8px 0;
+        border-bottom: #0065fc 3px solid;
+    }
+    .header-nav{
+        width: 100vw;
+        padding: 0;
+        display: flex;
+    }
+
+    main{
+        width: 100%;
+        padding: 0;
+    }
+    .titre-search{
+        padding-left: 8px;
+    }
+    .titre-search H3{
+        margin-bottom: 8px;
+    }
+}
