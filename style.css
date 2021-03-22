@@ -2,8 +2,9 @@
 
 .container{
     font-family: 'Raleway', sans-serif;
-    width: 90%;
+    max-width: 1500px;
     margin: auto;
+    display: block;
 }
 /*partit header de mon projet */
 
@@ -257,14 +258,12 @@ main{
     margin: 15px 0;
 }
 /* hebergement populaire */
-
 .block-card-populaire{
-    background-color: #F2F2F2;
-    border-radius: 15px;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    width: 30%;
+    min-width: 30%;
+    border-radius: 15px;
+    background-color: #F2F2F2;
 }
 .titre-populaire{
     display: flex;
@@ -272,49 +271,67 @@ main{
     align-items: center;
 }
 .conteneur-card-populaire{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.card-populaire {
-    background-color: white;
-    border-radius: 20px;
-    display: flex;
-    margin: 0 auto 20px auto;
-    min-width: 220px;
-    width: 85%;
-    max-height: 130px;
+    margin: auto;
+    width: 75%;
 }
 .lien-card-populaire{
-    display: flex;
     text-decoration: none;
     color: black;
-    border-radius: 15px;
-    padding: 5px;
-}
-.conteneur-image-populaire{
-    width: 50%;
-}
-.accomodation-populaire{
-    width: 50%;
-    padding-left: 5px;
-}
-.accomodation-populaire-text{
     display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    padding-top: 10px;
+    padding: 4px;
+    height: 100%;
 }
-.accomodation-populaire-text p{
-    margin: 0;
+.card-populaire:hover{
+    background-color: white;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    min-width: 300px;
+    height: 130px;
+    min-height: 130px;
+    box-shadow: 0 3px 10px 1px #7e7e7e;
+
 }
 
+.card-populaire{
+    background-color: white;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    min-width: 300px;
+    height: 130px;
+    min-height: 130px;
+}
+.accomodation-populaire p{
+    margin-top: 0;
+}
+.accomodation-populaire h4{
+    font-weight: bold;
+    margin-bottom: 9px;
+}
+.accomodation-populaire{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    padding-top: 5px;
+    margin-left: 7px;
+}
+
+.conteneur-image-populaire{
+    min-height: 100%;
+    width: 33%;
+    min-width: 33%;
+    max-width: 33%;
+}
 .img-populaire{
     object-fit: cover;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     height: 100%;
     width: 100%;
+    max-height: 120px;
 }
 
 
@@ -358,31 +375,35 @@ main{
 }
 .img-large{
     height: 400px;
-    width: 300px;
+    width: 100%;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 .img-medium{
     height: 200px;
-    width: 300px;
+    width: 100%;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 .img-small{
     height: 120px;
-    width: 300px;
+    width: 100%;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 .img-small2{
     height: 160px;
-    width: 290px;
+    width: 100%;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+}
+.lien-activite{
+    min-width: 22%;
+    max-width: 22%; 
 }
 .card-activite{
     box-shadow: 0 3px 10px 1px #7e7e7e;
@@ -428,6 +449,10 @@ main{
 /* ajout des media queries*/
 @media screen and (max-width: 650px)
 {
+    .container{
+        width: 100%;
+    }
+
     body{
         margin: 0;
         padding: 0;
@@ -468,10 +493,6 @@ main{
         display: flex;
     }
 
-    main{
-        width: 100%;
-        padding: 0;
-    }
     .titre-search{
         padding-left: 8px;
     }
@@ -503,5 +524,39 @@ main{
     .block-text-filtre{
         width: 100%;
     }
+
+    /* hebergement pour mobile */
+
+    .hebergement{
+        flex-direction: column-reverse;
+    }
+    .block-card-populaire{
+        border-radius: 0;
+        margin: auto;
+        width: 100%;
+        align-items: flex-start;
+    }
+    .card-populaire{
+        min-width: 200px;
+    }
+    .conteneur-card-populaire{
+        margin: 0;
+        width: 100%;
+    }
+    .block-card-hebergement{
+        background-color: white;
+        margin: 0;
+        width: 100%;
+    }
+    .titre-hebergement{
+        padding: 0;
+    }
+    .conteneur-card-hebergement{
+        flex-direction: column;
+    }
+    .card-hebergement{
+        width: 100%;
+    }
+
     
 }
