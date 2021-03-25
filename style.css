@@ -270,10 +270,6 @@ main{
     justify-content: space-around;
     align-items: center;
 }
-.conteneur-card-populaire{
-    margin: auto;
-    width: 75%;
-}
 .lien-card-populaire{
     text-decoration: none;
     color: black;
@@ -286,21 +282,22 @@ main{
     border-radius: 15px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    min-width: 300px;
+    min-width: 240px;
     height: 130px;
     min-height: 130px;
     box-shadow: 0 3px 10px 1px #7e7e7e;
-
+    width: 80%;
 }
 
 .card-populaire{
     background-color: white;
     border-radius: 15px;
     box-sizing: border-box;
-    margin-bottom: 20px;
-    min-width: 300px;
+    margin: 20px auto;
+    min-width: 240px;
     height: 130px;
     min-height: 130px;
+    width: 80%;
 }
 .accomodation-populaire p{
     margin-top: 0;
@@ -358,11 +355,9 @@ main{
 }
 .child-1{
     width: 22%;
-    min-width: 330px;
 }
 .child-2{
     width: 22%;
-    min-width: 330px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -410,7 +405,6 @@ main{
 .card-activite-same{
     box-shadow: 0 3px 10px 1px #7e7e7e;
     border-radius: 15px;
-    height: 45%;
 }
 
 
