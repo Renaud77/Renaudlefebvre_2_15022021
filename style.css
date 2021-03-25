@@ -549,6 +549,7 @@ main{
     }
     .card-hebergement{
         width: 100%;
+        box-shadow: 0 0 5px 0 #7e7e7e;
     }
     .card-hebergement a{
         width: 98%;
@@ -563,41 +564,62 @@ main{
     }
     .conteneur-activite{
         flex-direction: column;
+        align-content: center;
     }
-    .lien-activite{
-        
-        max-width: 100%;
-        padding-bottom: 20px;
-        max-height: 220px;
+    .child-1{
+        width: 98%;
+    }
+    .child-2{
+        width: 98%;
     }
     .img-large{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
+        height: 125px;
     }
     .img-medium{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
+        height: 125px;
     }
     .img-small{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
+        height: 125px;
     }
-    .img-small2{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
+    .img-same{
+        height: 125px;
     }
+    .card-activite-large{
+        margin-bottom: 20px;
+    }
+    .card-activite-medium{
+        margin-bottom: 20px;
+    }
+    .card-activite-small{
+        margin-bottom: 20px;
+    }
+    .card-activite-same{
+        margin-bottom: 20px;
 
-
+    }
+    /* section footer pour la partit mobile*/
+    .container-footer{
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    .footer-left{
+        margin: 25px 0;
+    }
+    .footer-middle{
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    .footer-right{
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    .footer-h3{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .footer-a{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 8px;
+    }
 }
