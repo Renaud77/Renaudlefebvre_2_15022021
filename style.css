@@ -502,8 +502,6 @@ main{
         padding: 6px 15px;
         background-color: #0065fc;
         border-radius: 12px;
-        position: relative;
-        left: -7px;
     }
     .fa-search{
         color: white;
