@@ -177,12 +177,12 @@ main{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
 }
 .block-card-hebergement{
     display: flex;
     flex-direction: column;
     background-color: #f2f2f2;
-    margin: 0 auto 0 0;
     width: 66%;
     border-radius: 15px;
 }
