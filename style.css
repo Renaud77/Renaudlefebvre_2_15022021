@@ -420,7 +420,6 @@ main{
 .content-footer{
     width: 20%;
     margin-right: auto;
-    padding-left: 20px;
 }
 .footer-a{
     padding-top: 10px;
@@ -622,7 +621,6 @@ main{
     /* section footer pour la partit mobile*/
     .container-footer{
         flex-direction: column;
-        padding-left: 20px;
         padding-top: 20px;
     }
     .content-footer{
