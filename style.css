@@ -24,8 +24,6 @@ main{
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
-    width: 96%;
-    margin: auto;
 }
 .link, .register{
     text-decoration: none;
