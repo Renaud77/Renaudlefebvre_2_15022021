@@ -8,7 +8,7 @@ main{
 	width: 96%;
     margin: auto;
 }
-/* CSS pour la partit desktop */
+                                                            /* CSS pour la partit desktop */
 
 .container{
     font-family: 'Raleway', sans-serif;
@@ -16,13 +16,16 @@ main{
     margin: auto;
     display: block;
 }
-/*partit header de mon projet */
+                                                            /*partit header de mon projet */
 
 .header-reservia {
     align-items: center;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 20px;
+    width: 96%;
+    margin: auto;
 }
 .link, .register{
     text-decoration: none;
@@ -40,24 +43,25 @@ main{
 }
 .link:hover{
     border-top: solid 3px #0065fc;
-    padding-top: 2.6rem;
+    padding-top: 23px;
     color: #0065fc;
     transition: 300ms;
 }
-.logo-desktop{
-    padding-top: 15px;
-}
-/*Section search bar*/
+
+                                                            /*Section search bar*/
 
 .search{
     display: flex;
-    padding: 5px 5px;
+    height: 45px;
+
 }
 .icon-left{
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
     padding: 6px 15px;
     background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
 }
 .searchbar{
     border: #F2F2F2  solid 2px;
@@ -67,17 +71,19 @@ main{
 
 ::placeholder{
     color: black;
-    font-weight: bold;
+    font-weight: 700;
 
 }
 .icon-right{
     padding: 7px 12px;
     color: white;
     list-style: none;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
     background-color:#0065FC;
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 .icon-right a {
     text-decoration: none;
@@ -99,7 +105,7 @@ main{
     margin-top: 20px;
 }
 
-/*Section filtre*/
+                                                                /*Section filtre*/
 .conteneur-filtre{
     display: flex;
     align-items: center;
@@ -146,7 +152,7 @@ main{
     color: black;
     font-weight: 600;
 }
-/*Section icone info*/
+                                                                     /*Section icone info*/
 .block-info{
     display: flex;
     align-items: center;
@@ -170,9 +176,10 @@ main{
 }
 .block-info-text h3{
     font-size: 15px;
+    font-weight: 400;
 }
 
-/*Section hebergement et hebergement populaire*/
+                                                        /*Section hebergement et hebergement populaire*/
 .hebergement{
     display: flex;
     flex-wrap: wrap;
@@ -258,7 +265,7 @@ main{
 .titre-hebergement h3{
     margin: 15px 0;
 }
-/* hebergement populaire */
+                                                                    /* hebergement populaire */
 .block-card-populaire{
     display: flex;
     flex-direction: column;
@@ -334,7 +341,7 @@ main{
 }
 
 
-/* decoupage de la taille des imgs activite*/
+                                                                /* Section activite*/
 .activite{
     margin-bottom: 50px;
 }
@@ -408,14 +415,16 @@ main{
     box-shadow: 0 3px 10px 1px #7e7e7e;
     border-radius: 15px;
 }
-
-
-
-/*partit footer*/
+                                                                /*partit footer*/
 .container-footer{
     display: flex;
     justify-content: space-between;
     background-color: #F2F2F2;
+}
+.content-footer-left{
+    width: 20%;
+    margin-right: auto;
+    padding-left: 30px;
 }
 .content-footer{
     width: 20%;
@@ -430,7 +439,7 @@ main{
     padding: 0;
 }
 
-/* ajout des media queries*/
+                                                            /* ajout des media queries*/
 @media screen and (max-width: 650px)
 {
     .container{
@@ -483,8 +492,7 @@ main{
     .titre-search H3{
         margin-bottom: 8px;
     }
-    /* search-bar pour mobile */
-
+                                                                /* search-bar pour mobile */
     .icon-right{
         display: none;
     }
@@ -492,7 +500,9 @@ main{
         display: flex;
         padding: 6px 15px;
         background-color: #0065fc;
-        border-radius: 12px;
+        border-radius: 13px;
+        display: flex;
+        align-items: center;
     }
     .fa-search{
         color: white;
@@ -504,7 +514,7 @@ main{
         margin-bottom: 20px;
     }
 
-    /* filtre pour mobile*/
+                                                                    /* filtre pour mobile*/
 
     .conteneur-filtre{
         flex-wrap: wrap;
@@ -513,7 +523,7 @@ main{
         width: 100%;
     }
 
-    /* hebergement pour mobile */
+                                                                /* hebergement pour mobile */
 
     .hebergement{
         flex-direction: column-reverse;
@@ -575,7 +585,7 @@ main{
         margin-left: 10px;
     }
 
-    /* section activite pour mobile */
+                                                        /* section activite pour mobile */
     .titre-activiter h3{
         margin-left: 10px;
     }
@@ -618,7 +628,7 @@ main{
     .card-activite-same{
         margin-bottom: 20px;
     }
-    /* section footer pour la partit mobile*/
+                                                            /* section footer pour la partit mobile*/
     .container-footer{
         flex-direction: column;
         padding-top: 20px;
@@ -649,7 +659,7 @@ main{
         width: 100%;
         margin-bottom: 50px;
     }
-    /* activiter pour la partit tablette */
+                                                                    /* activiter pour la partit tablette */
     .activite{
         flex-direction: column;
     }
