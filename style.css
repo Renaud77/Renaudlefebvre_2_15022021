@@ -435,7 +435,10 @@ main{
     text-decoration: none;
     color: black;
 }
-.content-footer, .content-footer-left ul{
+.content-footer ul{
+    padding: 0;
+}
+.content-footer-left ul{
     padding: 0;
 }
 
