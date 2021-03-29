@@ -24,6 +24,8 @@ main{
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
+    width: 96%;
+    margin: auto;
 }
 .link, .register{
     text-decoration: none;
@@ -45,9 +47,7 @@ main{
     color: #0065fc;
     transition: 300ms;
 }
-
                                                             /*Section search bar*/
-
 .search{
     display: flex;
     height: 45px;
@@ -66,11 +66,9 @@ main{
     padding: 3px 3px;
     color: black;
 }
-
 ::placeholder{
     color: black;
     font-weight: 700;
-
 }
 .icon-right{
     padding: 7px 12px;
@@ -102,7 +100,6 @@ main{
     margin: auto;
     margin-top: 20px;
 }
-
                                                                 /*Section filtre*/
 .conteneur-filtre{
     display: flex;
@@ -176,7 +173,6 @@ main{
     font-size: 15px;
     font-weight: 400;
 }
-
                                                         /*Section hebergement et hebergement populaire*/
 .hebergement{
     display: flex;
@@ -235,7 +231,6 @@ main{
 .accomodation-hebergement-stars{
     align-items: flex-end;
 }
-
 .img-hebergement{
     height: 100px;
     width: 100%;
@@ -295,7 +290,6 @@ main{
     width: 80%;
     transition: 300ms;
 }
-
 .card-populaire{
     background-color: white;
     border-radius: 15px;
@@ -322,7 +316,6 @@ main{
     padding-top: 5px;
     margin-left: 7px;
 }
-
 .conteneur-image-populaire{
     min-height: 100%;
     width: 33%;
@@ -337,8 +330,6 @@ main{
     width: 100%;
     max-height: 120px;
 }
-
-
                                                                 /* Section activite*/
 .activite{
     margin-bottom: 50px;
