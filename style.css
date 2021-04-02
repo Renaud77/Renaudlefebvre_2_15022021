@@ -31,7 +31,6 @@ main{
     text-decoration: none;
     border-top: solid 3px transparent;
     padding-left: 20px;
-    padding-right: 20px;
     padding-top: 2.6rem;
 }
 .register{
@@ -445,6 +444,7 @@ main{
         flex-wrap: wrap;
         margin: 0;
         padding: 0;
+        width: 100%;
     }
     .register{
         position: absolute;
